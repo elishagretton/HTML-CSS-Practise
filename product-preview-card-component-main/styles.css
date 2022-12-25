@@ -1,0 +1,88 @@
+/* Import fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+/* Preset */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+* {
+    background-color: blanchedalmond;
+}
+/* Body */
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.container img {
+    height: auto;
+    width: 300px;
+}
+
+.right-side{
+    width: 300px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    font-size: 36px;
+}
+
+p {
+    font-family: 'Montserrat', serif;
+    color: grey;
+}
+
+.price {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 20px;
+}
+#current-price {
+    color: green;
+    font-family: 'Fraunces', serif;
+    font-size: 24px;
+
+}
+
+#previous-price {
+    font-family: 'Montserrat', serif;
+    color: grey;
+    text-decoration: line-through
+}
+
+.add-to-cart-btn {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 3px;
+    justify-content: center;
+}
+
+.add-to-cart-btn button {
+    background-color: green;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    column-gap: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 300px;
+
+}
+.add-to-cart-btn button img {
+    height: 15px;
+    width: auto;
+}
+
