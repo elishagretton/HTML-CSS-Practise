@@ -12,34 +12,57 @@
     color: hsl(228, 45%, 44%);
 }
 * {
-    background-color: blanchedalmond;
+    background-color: hsl(30, 38%, 92%)
 }
+
 /* Body */
 .container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    column-gap: 10px;
+    padding: 150px;
 }
 
-.container img {
-    height: auto;
+.image {
+    background-image: url("./images/image-product-desktop.jpg");
+    background-size: cover;
+    height: 600px;
     width: 300px;
+    border-radius: 15px 0px 0px 15px;
 }
 
 .right-side{
-    width: 300px;
+    width: 240px;
+    background-color: white;
+    padding: 27px 40px;
+
+    border-radius: 0px 15px 15px 0px;
+
 }
 
+.right-side > * {
+    background-color: white;
+}
+h2 {
+    font-family: 'Roboto', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+    font-weight: 200;
+    transform: scale(1, 0.9);
+    color: hsl(228, 12%, 48%);
+    font-size: 16px;
+}
 h1 {
     font-family: 'Fraunces', serif;
+    color: hsl(212, 21%, 14%);
     font-size: 36px;
 }
 
 p {
     font-family: 'Montserrat', serif;
-    color: grey;
+    color: hsl(228, 12%, 48%);
+    font-size: 14px;
 }
 
 .price {
@@ -49,16 +72,20 @@ p {
     column-gap: 20px;
 }
 #current-price {
-    color: green;
+    color: hsl(158, 36%, 37%);
     font-family: 'Fraunces', serif;
     font-size: 24px;
+    background-color: white;
 
 }
 
 #previous-price {
     font-family: 'Montserrat', serif;
     color: grey;
-    text-decoration: line-through
+    text-decoration: line-through;
+    background-color: white;
+    font-size: 12px;
+
 }
 
 .add-to-cart-btn {
@@ -70,7 +97,7 @@ p {
 }
 
 .add-to-cart-btn button {
-    background-color: green;
+    background-color: hsl(158, 36%, 37%);
     color: white;
     display: flex;
     flex-direction: row;
@@ -79,10 +106,58 @@ p {
     align-items: center;
     height: 50px;
     width: 300px;
+    font-family: 'Montserrat', serif;
+    border-radius: 15px;
+    border:none;
+    letter-spacing: 1.5px;
 
 }
 .add-to-cart-btn button img {
     height: 15px;
     width: auto;
+    fill:none;
+    padding: 2px;
 }
 
+.add-to-cart-btn button:hover {
+    background-color:hsl(158, 36%, 26%);
+    cursor: pointer;
+    transform: translateX(-0.25s);
+}
+
+@media (max-width: 660px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 150px;
+    }
+
+    .container .image {
+        background: url("./images/image-product-mobile.jpg");
+        height: auto;
+        width: 300px;
+        border-radius: 15px 15px 0px 0px;
+    }
+
+    h1 {
+        font-size: 24px;
+        margin: 5px;
+    }
+
+    h2 {
+        font-size: 12px;
+        margin: 5px;
+
+    }
+
+    .right-side{
+        width: 260px;
+        background-color: white;
+        padding: 19px 21px;
+    
+        border-radius: 0px 0px 15px 15px;
+    
+    }
+}

@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    position: relative;
+}
+
+.big-container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); 
+
+    height: 500px;
+    width: 900px;
+
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+
+    background-color: blue;
+}
+
+.container img {
+    margin-top: 20px;
+    position: relative;
+    left: -80px;
+}
+
+.container h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 50px;
+    position: relative;
+    left: -60px;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+.container p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 16px;
+    max-width: 230px;
+    color: hsla(0, 0%, 100%, 0.75);
+    position: relative;
+    left: -5px;
+}
+
+.container button {
+    border: none;
+    padding: 20px;
+    border-radius: 20px;
+    width: 150px;
+    background-color: hsl(0, 0%, 95%);
+    position: relative;
+    left: -50px;
+}
+
+#sedans-container {
+    background-color: hsl(31, 77%, 52%);
+}
+
+#suvs-container {
+    background-color: hsl(184, 100%, 22%);
+}
+
+#luxury-container {
+    background-color: hsl(179, 100%, 13%);
+}
+
+#sedans-btn {
+    color: hsl(31, 77%, 52%);
+}
+
+#suvs-btn {
+    color: hsl(184, 100%, 22%);
+}
+
+#luxury-btn {
+    color: hsl(179, 100%, 13%);
+}

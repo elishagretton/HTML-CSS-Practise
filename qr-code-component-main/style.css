@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&family=Outfit:wght@400;700&family=Red+Hat+Display:wght@500;700;900&family=Roboto:wght@100&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* TO-DO: Check what vh means. */
+    min-height: 100vh;
+    position: relative;
+    font-size: 16px;
+    background-color: hsl(212, 45%, 89%);
+}
+
+.container {
+    /* Get container in middle of screen */
+    /* TO-DO: Check why this works. */
+    position: absolute; 
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%); 
+
+    max-width: 420px;
+    background-color: hsl(0, 0%, 100%);
+
+    /* Get borders rounded for all four */
+    border-radius: 30px;
+    overflow: hidden;
+}
+
+.qr-code-image img {
+    border-radius: 20px;
+    overflow: hidden;
+    padding: 20px;
+    max-width: 420px;
+    max-height: 420px;
+    border-radius: 30px;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.text-content h1 {
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 20px;
+    color: hsl(218, 44%, 22%);
+    max-width: 350px;
+}
+
+.text-content p {
+    font-family: 'Outfit', sans-serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    max-width: 300px;
+    padding-bottom: 30px;
+    color: hsl(220, 15%, 55%);
+}
+
+
+@media only screen and (max-width: 425px){
+    .container {
+        width: 90%;
+    }
+    .qr-code-image img {
+        width: 100%;
+    }
+
+    .text-content h1 {
+        font-size: 24px;
+        max-width: 90%;
+    }
+
+    .text-content p {
+        font-size: 16px;
+        max-width: 90%;
+    }
+
+}
